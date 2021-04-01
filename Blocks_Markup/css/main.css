@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 870px;
+  background-color: #de2b24;
+}
+
+footer {
+  width: 100%;
+  height: 67px;
+  background-color: #515151;
+}
+
+.main {
+  width: 100%;
+  height: 848px;
+  background-color: #1287bf;
+}
+
+.big-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  padding-top: 99px;
+  color: #ffffff;
+}
+
+.small-text {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+
+.gallery {
+  width: 1024px;
+  height: 506px;
+  margin: auto;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 253px;
+  height: 253px;
+  position: relative;
+  display: block;
+}
+
+img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 100;
+  background-position: 0 -40px;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.column {
+  float: left;
+}
+
+.flip-card h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gallery-text {
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.flip-card {
+  width: 256px;
+  height: 253px;
+  display: block;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f35e59;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #f35e59;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card img {
+  width: 36px;
+  height: 37px;
+  margin: 75px auto 0 auto;
+}
+
+.line{
+  width: 47px;
+  height: 5px;
+  background-color: #f3f3f3;
+  margin: 17px auto 47px auto;
+}
+
+.blue-ellipse {
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  border-radius: 50px;
+  border: solid 3px #ffffff;
+  background-color: #1287bf;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-top: 18px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#close {
+  position: absolute;
+  background: #de2b24;
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  margin: -20px 0 423px 315px;
+  border: solid 2px #ffffff;
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  padding-bottom: 6px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.triangle {
+  height: 0;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid #ffffff;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  transform: rotate(90deg);
+  margin: auto;
+}
+
+.customer-form {
+  width: 683px;
+  height: 460px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.form-text {
+  margin-top: 0;
+  height: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  hyphens: auto;
+  text-align: center;
+  color: #828282;
+  padding-top: 48px;
+  padding-bottom: 19px;
+  margin-left: 68px;
+  margin-right: 50px;
+}
+
+input[type=text], input[type=tel] {
+  width: 443px;
+  padding: 15px;
+  margin: 5px 0 5px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b0b0b0;
+  border-radius: 3px;
+  border: solid 1px #d8d8d8;
+}
+
+#name {
+  border: solid 1px #1287bf;
+}
+
+.submit-form {
+  padding-top: 32px;
+}
+
+.button-submit {
+  width: 161px;
+  height: 46px;
+  background-color: #de2b24;
+  border-radius: 3px;
+  border: solid 2px #de2b24;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.bottom {
+  width: 100%;
+  height: 490px;
+  background-color: #2a2a2a;
+}
+
+.touch {
+  height: 23px;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 90px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 52px;
+}
+
+.icons {
+  text-align: center;
+  cursor: pointer;
+}
+
+.rounded-icon {
+  margin-left: 24px;
+  padding: 11px 22px 12px 19px;
+  border-radius: 1px;
+  border: solid 2px #515151;
+  background-color: #2a2a2a;
+}
+
+.rounded-icon:hover {
+  transition: 0.5s;
+  border: solid 2px #de2b24;
+}
+
+.facebook {
+  margin-left: 0;
+  background-image: url("../img/icon8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-image: url("../img/icon9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.google {
+  background-image: url("../img/icon10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.linked {
+  background-image: url("../img/icon11.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe-text {
+  height: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 31px;
+  padding-top: 38px;
+  align-content: center;
+  text-align: center;
+  color: #cecece;
+}
+
+form {
+  text-align: center;
+}
+
+#email {
+  width: 683px;
+  height: 54px;
+  border-radius: 1px;
+  background-color: #515151;
+  border: 1px solid #515151;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  color: #cecece;
+  padding-left: 22px;
+}
+
+#button-subscribe {
+  width: 149px;
+  height: 49px;
+  margin: 29px 5px 0 8px;
+  border-radius: 3px;
+  border: solid 2px #515151;
+  background-color: #2a2a2a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-text {
+  height: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;;
+  padding-top: 26px;
+  text-align: center;
+  color: #cecece
+}
